@@ -21,10 +21,10 @@ public class Hooks {
 		testBase.selectBrowser();
 	}
 
-	@After
+	/*@After
 	public void close(Scenario scenario) throws IOException {
 
-		if (scenario.isFailed() == true) {
+		*//*if (scenario.isFailed() == true) {
 
 			String screenshotName = scenario.getName().replaceAll(" ", "_");
 			TakesScreenshot ts = (TakesScreenshot) testBase.getDriver();
@@ -39,9 +39,9 @@ public class Hooks {
 					System.getProperty("user.dir") + "/FailedScreenshots/" + screenshotName + ".png");
 			Files.copy(sourcePath, destinationPath);
 
-		}
+		}*//*
 		testBase.getDriver().close();
 
 	}
-
+*/
 }
